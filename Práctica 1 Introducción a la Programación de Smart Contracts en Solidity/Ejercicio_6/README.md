@@ -18,28 +18,48 @@
  
 ### Contenido del contrato inteligente
 #### Datos
- propiedades disponibles
- 
- propiedades alquiladas
+|Propiedad | Estructura de la propiedad a alquilar. Contiene: |
+| --- | --- |
+|	nombre | Nombre de la propiedad. |
+|	dirección | Dirección física de la propiedad. |
+|	estado | Estado físico de la propiedad. |
+|	precioDia | Precio de la propiedad por día. |
+
+|Alquiler | Estructura para almacenar información sobre cada alquiler. |
+| --- | --- |
+|	inquilino	| Dirección del inquilino. |
+|	inicio | Fecha de inicio del alquiler. |
+|	fin | Fecha de finalización del alquiler. |
+
+|propiedadADuenho | Mapping que relaciona una propiedad con su dueño. |
+| --- | --- |
+
+|duenhoAPropiedad | Mapping que relaciona a un usuario con el número de propiedades que posee. |
+| --- | --- |
+
+|propiedadAAlquiler | Mapping que relaciona una propiedad con un array de alquileres. |
+| --- | --- |
 #### Funciones
- reservar propiedad
+| Nombre | Descricpción |
+| --- | --- |
+| reservar |	Permite a un inquilino alquilar una propiedad. |
+| renovar |	Permite a un inquilino volver a alquilar una propiedad que ya ha alquilado anteriormente. |
+| cancelarReserva |	Permite a un inquilino cancelar un alquiler. |
+| anhadirPropiedad |	Permite a un propietario añadir una propiedad. |
+| eliminarPropiedad |	Permite a un propietario eliminar una de sus propiedades. |
+| modificarPropiedad |	Permite a un propietario modificar una de sus propiedades. |
+| cancelarReservaInquilino |	Permite a un propietario cancelar el alquiler de un inquilino. |
+| cancelarReservasInquilino |	Permite a un propietario cancelar todos los alquileres de un inquilino. |
+| cancelarReservasPropiedad |	Permite a un propietario cancelar todos los alquileres de una propiedad. |
+| _terminoElAlquiler |	Comprueba si el alquiler de un inquilino ya ha terminado. |
+| _rangoAlquileres |	Comprueba si una propiedad está alquilada durante un periodo de tiempo. |
+| _esInquilino |	Comprueba si un inquilino ha alquilado una propiedad. |
+| _eliminarAlquiler |	Función interna para eliminar alquileres. |
+| transferirFondosAlDuenho |	Función para acceder a los fondos del contrato. |
 
- cancelar reserva inquilino
-
- renovar reserva
-
- añadir propiedad
-
- eliminar propiedad
-
- modificar propiedad
-
- cancelar reserva propietario
 ### Usuarios del sistema
  Dueños de propiedades: Usuarios que ofrezcan propiedades a alquilar.
  
  Inquilinos: Usuarios que deseen alquilar propiedades.
 
-<dl>
-<img src="https://embed.creately.com/NGB2MgXMXTO?token=5Fqk7LDv90v0NtUS&type=svg">
-</dl>
+
