@@ -87,11 +87,12 @@ contract alquiler {
     propiedades.pop();
   }
 
-  function modificarPropiedad(uint _idPropiedad, string memory _nombre, string memory _direccion, string memory _estado) public onlyOwnerOf(_idPropiedad) {
+  function modificarPropiedad(uint _idPropiedad, string memory _nombre, string memory _direccion, string memory _estado, uint _precioDia) public onlyOwnerOf(_idPropiedad) {
     Propiedad storage propiedadAModificar = propiedades[_idPropiedad];
     propiedadAModificar.nombre = _nombre;
     propiedadAModificar.direccion = _direccion;
     propiedadAModificar.estado = _estado;
+    propiedadAModificar.precioDia = _precioDia;
   }
 
   function cancelarReservaInquilino(uint _idPropiedad, uint _inicioAlquiler, uint _finAlquiler, address _inquilino) public onlyOwnerOf(_idPropiedad) {
