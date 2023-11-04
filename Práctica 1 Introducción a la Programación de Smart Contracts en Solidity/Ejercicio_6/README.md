@@ -56,4 +56,4 @@ Nombre | Descripción |
  
  Inquilinos: Usuarios que deseen alquilar propiedades.
 
-![Diagrama de casos de uso](/../../assets/images/practica01_ejercicio06_diagramaDeCasosDeUso.png)
+![Diagrama de casos de uso](https://github.com/ALVareador/Tecnologias-de-registro-distribuido-y-Blockchain/blob/main/assets/images/practica01_ejercicio06_diagramaDeCasosDeUso.png)
