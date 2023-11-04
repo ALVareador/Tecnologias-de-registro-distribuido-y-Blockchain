@@ -18,27 +18,21 @@
  
 ### Contenido del contrato inteligente
 #### Datos
-|Propiedad | Estructura de la propiedad a alquilar. Contiene: |
+Nombre | Descripción |
 | --- | --- |
+| Propiedad | Estructura de la propiedad a alquilar. Contiene: |
 |	nombre | Nombre de la propiedad. |
 |	dirección | Dirección física de la propiedad. |
 |	estado | Estado físico de la propiedad. |
 |	precioDia | Precio de la propiedad por día. |
-
-|Alquiler | Estructura para almacenar información sobre cada alquiler. |
-| --- | --- |
+| Alquiler | Estructura para almacenar información sobre cada alquiler. |
 |	inquilino	| Dirección del inquilino. |
 |	inicio | Fecha de inicio del alquiler. |
 |	fin | Fecha de finalización del alquiler. |
+| propiedadADuenho | Mapping que relaciona una propiedad con su dueño. |
+| duenhoAPropiedad | Mapping que relaciona a un usuario con el número de propiedades que posee. |
+| propiedadAAlquiler | Mapping que relaciona una propiedad con un array de alquileres. |
 
-|propiedadADuenho | Mapping que relaciona una propiedad con su dueño. |
-| --- | --- |
-
-|duenhoAPropiedad | Mapping que relaciona a un usuario con el número de propiedades que posee. |
-| --- | --- |
-
-|propiedadAAlquiler | Mapping que relaciona una propiedad con un array de alquileres. |
-| --- | --- |
 #### Funciones
 | Nombre | Descricpción |
 | --- | --- |
@@ -62,4 +56,4 @@
  
  Inquilinos: Usuarios que deseen alquilar propiedades.
 
-
+![Diagrama de casos de uso](/../../assets/images/practica01_ejercicio06_diagramaDeCasosDeUso.png)
